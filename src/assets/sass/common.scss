@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Fustat";
+}
+body {
+	cursor: url("../images/cursor.cur"), auto;
+  background: linear-gradient(247deg,#000000,#014401,#000000,#014401);
+  background-size: 240% 240%;
+  animation: gradient-animation 32s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+.main {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: rgba(243, 243, 243, 1);
+		font-size: 20px;
+		font-weight: 300;
+}
+
+button, input, textarea, select {
+  border: none;
+  outline: none;
+  background: none;
+}
+button {
+	background-color: unset;
+	cursor: url('../images/cursor_Pointer.cur'), auto;
+	transition: 0.3s;
+	&:active {
+		transform: translateY(1px);
+		opacity: 0.8;
+	}
+	&:hover {
+			background: #fff;
+			color: #000;
+		}
+}
+.title {
+	text-transform: uppercase;
+font-weight: 500;
+color: #93ebdd;
+font-size: 48px;
+margin-bottom: 40px;
+
+}
+ul, ol {
+  list-style: none;
+}
+
+a {
+
+  text-decoration: none;
+  color: inherit;
+  cursor: url('../images/cursor_select.cur'), auto;
+}

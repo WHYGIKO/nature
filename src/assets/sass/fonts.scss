@@ -1,0 +1,9 @@
+$Fustat: ('Regular', 400), ('Medium', 500), ('Light', 300), ('ExtraBold', 800);
+
+@each $name, $weight in $Fustat {
+  @font-face {
+    font-family: 'Fustat';
+    src: url('/src/fonts/Fustat-#{$name}.ttf');
+    font-weight: $weight;
+  }
+}
